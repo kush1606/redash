@@ -231,6 +231,7 @@ if (process.env.NODE_ENV === "production") {
     })
   );
   config.devtool = "source-map";
+  config.bail = true;
 }
 
 if (process.env.BUNDLE_ANALYZER) {
